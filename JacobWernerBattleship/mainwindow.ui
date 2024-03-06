@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="p1UI">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>331</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="p2UI">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>50</y>
+      <width>331</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Sub">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submarine</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Dest">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Destroyer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Carrier">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Carrier</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Carrier">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Carrier</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Dest">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>150</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Destroyer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Sub">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Submarine</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Player 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Player 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score_1">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hits:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score_2">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hits:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Missle">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Missle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Torpedo">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Torpedo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1dCharge">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D. Charge</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2dCharge">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D. Charge</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Missle">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Missle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Torpedo">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>390</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Torpedo</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>41</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p1TorpedoCount">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>420</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p1dChargeCount">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>420</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p2TorpedoCount">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>420</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p2dChargeCount">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>420</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rules">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>420</y>
+      <width>151</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cruiser: 2 Tiles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Submarine: 3 Tiles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Destroyer: 3 Tiles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Battleship: 4 Tiles&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Carrier: 5 Tiles&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Done">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>91</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Done</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Done">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>270</y>
+      <width>91</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Done</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="scorebar">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>450</y>
+      <width>200</width>
+      <height>100</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resetGame">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>390</y>
+      <width>101</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="turn1">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Turns: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="turn2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Turns: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p1WinCount">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>460</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Player 1: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p2WinCount">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>510</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Player 2: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Btl">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Battleship</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p1Cru">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cruiser</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Cru">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cruiser</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="p2Btl">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>190</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Battleship</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p1Score">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>20</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="p2Score">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>20</y>
+      <width>59</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>923</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>resetGame</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>restartButtonSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>420</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Carrier</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1CarrClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Dest</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1DestClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Sub</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1SubClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Done</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1EndSetup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Torpedo</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1TorpClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1dCharge</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1DcgeClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Carrier</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2CarrClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Dest</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2DestClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Sub</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2SubClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Done</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2EndSetup()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Torpedo</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2TorpClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2dCharge</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2DcgeClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Cru</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1CruClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Cru</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2CruClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p1Btl</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p1BtlClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>p2Btl</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>p2BtlClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>click()</slot>
+  <slot>scoreChangeSlot()</slot>
+  <slot>restartButtonSlot()</slot>
+  <slot>TorpedoSlot(Tile*)</slot>
+  <slot>DepthChargeSlot(Tile*)</slot>
+  <slot>p1SubClick()</slot>
+  <slot>p2SubClick()</slot>
+  <slot>p1DestClick()</slot>
+  <slot>p2DestClick()</slot>
+  <slot>p1TorpClick()</slot>
+  <slot>p2TorpClick()</slot>
+  <slot>p1DcgeClick()</slot>
+  <slot>p2DcgeClick()</slot>
+  <slot>p1EndSetup()</slot>
+  <slot>p2EndSetup()</slot>
+  <slot>p1CarrClick()</slot>
+  <slot>p2CarrClick()</slot>
+  <slot>p1CruClick()</slot>
+  <slot>p2CruClick()</slot>
+  <slot>p1BtlClick()</slot>
+  <slot>p2BtlClick()</slot>
+ </slots>
+</ui>
